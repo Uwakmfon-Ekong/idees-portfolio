@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
 * {
   margin: 0;
@@ -43,6 +46,7 @@ h1 {
   color: white;
   justify-content: center;
   align-items: center;
+  font-size: 50px;
 }
 .navList ul li {
   padding-right: 1rem;
@@ -55,6 +59,49 @@ h1 {
 ul li a:hover{
     color: black;
 }
+.btn{
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+/* media queries */
+@media (max-width:768px) {
+  .btn{
+    display: block;
+  }
+  .navList ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding:5rem 0;
+    width: 300px;
+    height: 100vh;
+    background:white;
+    top: 75px;
+    left: -100%;
+    transition: all 0.5s ease-in;
+  }
+  .navList ul li a{
+    display:block;
+    margin: 10px;
+    color: black;
+  }
+  .navList ul li a:hover{
+    background: blue;
+    cursor: pointer;
+  }
+  .navList ul.display{
+    left: 0;
+    transition: all 0.9s ease-in-out;
+  }
+  .close-btn{
+    position: absolute;
+    top: 0rem;
+    left: 15rem;
+    margin: 25px;
+  }
+}
 .active{
     color: black;
 }
@@ -62,6 +109,7 @@ ul li a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1rem;
 }
 .line {
   width: 50%;
@@ -124,6 +172,7 @@ ul li a:hover{
 .myWork h1 {
   font-size: 50px;
   font-weight: 600;
+  text-align: center;
 }
 .myWork p {
   font-size: 18px;
@@ -219,6 +268,12 @@ ul li a:hover{
 }
 
 /* media queries */
+@media (max-width:600px){
+  .educationPicture{
+    display: none;
+  }
+}
+/* animations */
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);

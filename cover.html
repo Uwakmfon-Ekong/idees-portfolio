@@ -8,22 +8,34 @@
       src="https://kit.fontawesome.com/98f3024161.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="navbar">
         <div class="logo"></div>
+
         <div class="navList">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
+            <div class="btn">
+              <i class="fas fa-times close-btn"></i>
+            </div>
+            <li><a href="index.html" style="color: black">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="education.html">Education</a></li>
-            <li><a href="work.html">My work</a></li>
-            <li><a href="cover.html" style="color:black;">Cover</a></li>
+            <li><a href="work.html">Works</a></li>
+            <li><a href="cover.html">Cover</a></li>
           </ul>
         </div>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
       </div>
+
       <div class="myWork">
         <h1>THANK YOU &#128522;</h1>
         <p>That's my portfolio so far</p>
@@ -38,5 +50,6 @@
         <div class="line"></div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
