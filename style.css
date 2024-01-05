@@ -32,7 +32,8 @@ body {
 .navList {
   display: flex;
 }
-.portfolio ,.contact {
+.portfolio,
+.contact {
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -56,68 +57,61 @@ h1 {
   color: white;
   transition: all 0.3s ease-in-out;
 }
-ul li a:hover{
-    color: black;
+ul li a:hover {
+  color: black;
 }
-.btn{
+.btn {
   font-size: 1.3rem;
   color: black;
   cursor: pointer;
   display: none;
 }
-.contact h1{
+.contact h1 {
   font-size: 30px;
 }
 /* media queries */
-@media (max-width:768px) {
-  body{
+@media (max-width: 768px) {
+  body {
     width: 100%;
     height: 100vh;
   }
-  .portfolio{
+  .portfolio {
     width: 100%;
   }
-  .btn{
+  .btn {
     display: block;
   }
-  .navList ul{
+  .navList ul {
     display: flex;
     flex-direction: column;
     position: fixed;
-    padding:5rem 0;
+    padding: 5rem 0;
     width: 300px;
     height: 80vh;
-    background:white;
+    background: white;
     top: 75px;
     left: -100%;
     transition: all 0.5s ease-in;
   }
-  .navList ul li a{
-    display:block;
+  .navList ul li a {
+    display: block;
     margin: 10px;
     color: black;
   }
-  .navList ul.display{
+  .navList ul.display {
     left: 0;
     transition: all 0.9s ease-in-out;
   }
-  .close-btn{
+  .close-btn {
     position: absolute;
     top: 0rem;
     left: 15rem;
     margin: 25px;
   }
-  .about{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .aboutPicture{
-    width: 100%;
-  }
+  
 }
-.active{
-    color: black;
+.active {
+  color: black;
 }
 .footer {
   display: flex;
@@ -171,7 +165,22 @@ ul li a:hover{
   padding-bottom: 1rem;
 }
 .aboutText a {
- text-decoration: none;
+  text-decoration: none;
+}
+@media (max-width:786px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .aboutPicture{
+    width: 100%;
+  }
+  .aboutPicture img {
+    width: 100%;
+  }
+.aboutText{
+width: 100%;
 }
 
 .myWork {
@@ -202,7 +211,7 @@ ul li a:hover{
   filter: grayscale(1);
 }
 
-.education{
+.education {
   display: flex;
   justify-content: space-between;
   padding-top: 3rem;
@@ -212,17 +221,17 @@ ul li a:hover{
   color: #fff;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
-.educationText h1{
-    font-size: 40px;
+.educationText h1 {
+  font-size: 40px;
 }
-.educationText a{
-    text-decoration: none;
+.educationText a {
+  text-decoration: none;
 }
-.academy{
-    padding: 1rem 0;
+.academy {
+  padding: 1rem 0;
 }
-.nursing{
-    padding: 1rem 0;
+.nursing {
+  padding: 1rem 0;
 }
 .aboutText h3 {
   font-size: 25px;
@@ -276,8 +285,8 @@ ul li a:hover{
 }
 
 /* media queries */
-@media (max-width:600px){
-  .educationPicture{
+@media (max-width: 786px) {
+  .educationPicture {
     display: none;
   }
 }
