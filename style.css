@@ -62,7 +62,7 @@ ul li a:hover {
 }
 .btn {
   font-size: 1.3rem;
-  color: black;
+  color: white;
   cursor: pointer;
   display: none;
 }
@@ -182,6 +182,12 @@ ul li a:hover {
 .aboutText{
 width: 100%;
 }
+.contact h1{
+  text-align: center;
+  padding: 1rem;
+}
+}
+
 
 .myWork {
   height: 80vh;
